@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 public class ProductInputDisassembler {
 
     @Autowired
-    ModelMapper modelMapper;
+    private ModelMapper modelMapper;
 
     public Product toDomainObject(ProductInputDto productInput) {
         return modelMapper.map(productInput, Product.class);
