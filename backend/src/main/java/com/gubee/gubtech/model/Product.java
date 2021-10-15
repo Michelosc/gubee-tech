@@ -5,6 +5,7 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.time.OffsetDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -15,16 +16,13 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @CreationTimestamp
-    private OffsetDateTime createdAt;
-
     private String productName;
 
     private String description;
 
     @ElementCollection
-    private List<String> targetMarket;
+    private List<String> targetMarket = new ArrayList<>();
 
     @ElementCollection
-    private List<String> stack;
+    private List<String> stack = new ArrayList<>();
 }

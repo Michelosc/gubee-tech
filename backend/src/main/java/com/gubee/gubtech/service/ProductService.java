@@ -17,4 +17,12 @@ public class ProductService {
         return repository.findAll();
     }
 
+    public List<Product> search(String stack) {
+        String query = "%"+stack+"%";
+        return repository.findByStackLikeIgnoreCase(query); }
+
+    public Product save(Product product) {
+        return repository.save(product);
+    }
+
 }
