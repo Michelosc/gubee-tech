@@ -1,0 +1,14 @@
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  overflow: hidden;
+  width: 20rem;
+  height: 35rem;
+  background-color: #323233;
+  border-radius: 12px;
+  color: #fff;
+}

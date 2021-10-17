@@ -1,0 +1,26 @@
+.filter {
+  margin: auto;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+  width: 30rem;
+  height: 3.5rem;
+  margin-top: 0.5rem;
+}
+
+.container-filtro {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  width: inherit;
+  height: inherit;
+}
+
+.filter-value {
+  margin-left: 0.5rem;
+  
+  border: 1px solid;
+}
